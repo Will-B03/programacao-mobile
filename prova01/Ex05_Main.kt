@@ -17,10 +17,11 @@ fun main() {
     // Adiciona tarefas
     gerenciador.adicionarTarefa(Tarefa("Ir para o trabalho", "Trabalhar na franqueadora Apolar Imóveis", LocalDate.of(2024, 4, 25), 1))
     gerenciador.adicionarTarefa(Tarefa("Efutuar Analise de nova tela", "Analise de nova tela de cadastro de corretor", LocalDate.of(2024, 5, 1), 2))
-    gerenciador.adicionarTarefa(Tarefa("Ir para a faculdade", "Ir para a aula de Desenvolvimento para Dispositivos Móveis", LocalDate.of(2024, 4, 25), 3))
+    gerenciador.adicionarTarefa(Tarefa("Ir para a faculdade", "Ir para a aula de Desenvolvimento para Dispositivos Móveis", LocalDate.of(2024, 4, 26), 3))
 
     // Marcar uma tarefa como concluída
     gerenciador.marcarComoConcluida("Efutuar Analise de nova tela")
+    gerenciador.marcarComoConcluida("Ir para o trabalho")
 
     // Listar tarefas
     println("Todas as Tarefas:")
