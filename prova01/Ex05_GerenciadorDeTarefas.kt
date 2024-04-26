@@ -9,17 +9,21 @@ Implemente métodos para adicionar, remover, buscar, marcar como concluída e li
 Aluno: Willison Bonfim do Carmo
 ====================================================================================
 */
+//cria classe GeranciadrDeTarefas
 class GerenciadorDeTarefas {
     private val tarefas = mutableListOf<Tarefa>()
 
+    //Adcionar tarefa
     fun adicionarTarefa(tarefa: Tarefa) {
         tarefas.add(tarefa)
     }
 
+    //Remover tarefa
     fun removerTarefa(tarefa: Tarefa) {
         tarefas.remove(tarefa)
     }
 
+    //Buscar tarefa
     fun buscarTarefa(titulo: String): Tarefa? {
         return tarefas.find { it.titulo == titulo }
     }
